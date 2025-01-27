@@ -1,0 +1,82 @@
+
+
+
+.timer {
+    margin: 0 auto;
+    width: 315px;
+    @media (max-width: 410px){
+        width: 100%;
+    }
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 500;
+        text-transform: uppercase;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+    &__wrapper {
+    }
+}
+.countdown {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3px;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 0 50px 16px rgba(0, 0, 0, .4);
+    @media (max-width: 410px){
+        padding: 3px;
+        column-gap: 1px;
+    }
+}
+.num {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+.name {
+    display: block;
+    min-width:  73px;
+    text-align: center;
+}
+.days {
+}
+.hours {
+}
+.minutes {
+}
+.seconds {
+}
+
+
+/* 
+
+<div class="timer">
+    <div class="timer__title">COUNTDOWN</div>
+    <div class="timer__wrapper">
+        <div class="countdown">
+            <div class="days">
+                <p class="num">0</p>
+                <span class="name">День</span>
+            </div>
+            <div class="hours">
+                <p class="num">0</p>
+                <span class="name">Часов</span>
+            </div>
+            <div class="minutes">
+                <p class="num">0</p>
+                <span class="name">Минут</span>
+            </div>
+            <div class="seconds">
+                <p class="num">0</p>
+                <span class="name">Секунды</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+*/
